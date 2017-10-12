@@ -1,2 +1,2 @@
 # GeometricFigures_Java
-Learning Java with geometric figures
+Learning Java with regular geometric figures
