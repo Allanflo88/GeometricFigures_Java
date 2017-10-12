@@ -9,5 +9,5 @@ Figures:
 - Pentagon
 - Square
 - Rectangle
-- Trapezium
+- Trapeze
 - Triangle
