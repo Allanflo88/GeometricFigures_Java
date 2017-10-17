@@ -4,7 +4,7 @@ package models;
  *
  * @author allan
  */
-abstract class FigGeo {
+public abstract class FigGeo {
     private double lado;
 
     public FigGeo(double lado) {

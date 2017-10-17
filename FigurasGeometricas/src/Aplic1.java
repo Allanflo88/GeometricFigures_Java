@@ -1,5 +1,6 @@
 
 import java.util.Scanner;
+import models.FigGeo;
 import models.Circulo;
 import models.Losango;
 import models.Pentagono;
@@ -15,6 +16,7 @@ import models.Triangulo;
 public class Aplic1 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+        FigGeo[] figuras = new FigGeo[70];
         Quadrado quadrados[] = new Quadrado[10];
         Retangulo retangulos[] = new Retangulo[10];
         Circulo circulos[] = new Circulo[10];
@@ -22,7 +24,7 @@ public class Aplic1 {
         Pentagono pentagonos[] = new Pentagono[10];
         Trapezio trapezios[] = new Trapezio[10];
         Losango losangos[] = new Losango[10];
-        int contQuad = 0, contRet = 0, contCirc = 0, contTri = 0, contPent = 0, contTrap = 0, contLos = 0;
+        int contQuad = 0, contRet = 0, contCirc = 0, contTri = 0, contPent = 0, contTrap = 0, contLos = 0, cont = 0;
         double x, altura, hipo, y, z;
         
         while(contQuad < quadrados.length){
@@ -31,8 +33,8 @@ public class Aplic1 {
             if(x == 0){
                 break;
             }
-            quadrados[contQuad] = new Quadrado(x);
-            contQuad++;
+            figuras[cont] = new Quadrado(x);
+            cont++;
         }
         
         
@@ -45,8 +47,8 @@ public class Aplic1 {
             if(x == 0 || altura == 0){
                 break;
             }
-            retangulos[contRet] = new Retangulo(x, altura);
-            contRet++;
+            figuras[cont] = new Retangulo(x, altura);
+            cont++;
         }
         
         
@@ -56,8 +58,8 @@ public class Aplic1 {
             if(x == 0){
                 break;
             }
-            circulos[contCirc] = new Circulo(x);
-            contRet++;
+            figuras[contCirc] = new Circulo(x);
+            cont++;
         }
         
         
@@ -72,8 +74,8 @@ public class Aplic1 {
             if(x == 0 || altura == 0 || hipo == 0){
                 break;
             }
-            triangulos[contTri] = new Triangulo(x, altura, hipo);
-            contTri++;
+            figuras[cont] = new Triangulo(x, altura, hipo);
+            cont++;
         }
         
         
@@ -86,8 +88,8 @@ public class Aplic1 {
             if(x == 0 || altura == 0){
                 break;
             }
-            pentagonos[contPent] = new Pentagono(x, altura);
-            contPent++;
+            figuras[contPent] = new Pentagono(x, altura);
+            cont++;
         }
         
         
@@ -107,8 +109,8 @@ public class Aplic1 {
             if(x == 0 || altura == 0 || hipo == hipo || y == 0 || z == 0){
                 break;
             }
-            trapezios[contTrap] = new Trapezio(x, y, hipo, altura, z);
-            contTrap++;
+            figuras[contTrap] = new Trapezio(x, y, hipo, altura, z);
+            cont++;
         }
         
         
@@ -121,8 +123,8 @@ public class Aplic1 {
             if(x == 0 || y == 0){
                 break;
             }
-            losangos[contPent] = new Losango(x, y);
-            contLos++;
+            figuras[contPent] = new Losango(x, y);
+            cont++;
         }
         
         
