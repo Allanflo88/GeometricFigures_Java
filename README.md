@@ -1,7 +1,7 @@
 # GeometricFigures_Java
 Learning Java with regular geometric figures
 
-This console application register until 10 of each figure.
+This console application register unlimited figures of each type available.
 
 Figures:
 - Circle
